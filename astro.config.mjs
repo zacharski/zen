@@ -7,6 +7,6 @@ import preact from '@astrojs/preact';
 export default defineConfig({
   integrations: [preact()]
   site: 'https://zacharski.github.io',
-  base: 'my-repo/zen',
+  base: '/zen',
 
 });
