@@ -1,64 +1,59 @@
 ---
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-
-
-
-
-const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+import { Image } from 'astro:assets';
+import ensoImage from '../assets/enso25.png'; // Image is 1600x900
+const title = "Order of Clear Mind Zen - About";
 ---
+<BaseLayout pageTitle={title}>
+  
+  <p>The Order of Clear Mind Zen, established in 2005, is a Zen Buddhist organization
+     of socially engaged priests and practitioners who follow the Third Pure Precept, to "bring about abundant good."  
+     We are committed to Zen practice and believe a part of that practice is to support the health and well-being of all sentient beings. </p>
+    
+<h2>Harvey Daiho Hilbert-roshi</h2>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		
-        <title>{pageTitle}</title>
-        <style>
-            h1 {
-              color: purple;
-              font-size: 4rem;
-            }
-          </style>
+    <p>Harvey Daiho Hilbert-roshi is founding abbot of the Order of Clear Mind Zen.  
+    Daiho Roshi received Shukke Tokudo in the year 2000.  He received Dharma Transmission in 2005. He began 
+    studying Zen in 1966 after being shot in the head in combat in Vietnam. Roshi holds a Masters and PhD degree from 
+    Case Western Reserve University and is a Mensa member. He resides in Las Cruces, New Mexico.  Roshi is an accomplished painter, 
+    teacher, and retired psychotherapist.  His art work can be seen at http://daihozenart.blogspot.com.  </p>
 
-	</head>
-	<body>
-<Header/>
+    <h2>Rev. Hogaku Shozen McGuire-roshi</h2>
+    <p>Hogaku Shozen McGuire-roshi was the founding abbot of Daibutsuji Zen Temple in Las Cruces (1987) and Cloudcroft (1998), New Mexico.  
+      Hogaku is Dharma Heir to Rev. Dr. Soyu Matsuoka-roshi, the first Zen Master from Japan to establish a Zen Temple in the United States.  
+      Hogaku-roshi studied with Matsuoka-roshi in Long Beach, California from 1977 until he moved to New Mexico in 1983. Hogaku-roshi took 
+      Shukke Tokudo in 1984 and received Inka Shomei in 1987 from Matsuoka-roshi.  
+      In 1985 and 1986 he traveled to Japan with Matsuoka-roshi and was presented to the abbot of Sojiji.    
+      Recently, Rev. McGuire-Roshi was honored with the Transmission of Light Ceremony in the Vietnamese Rinzai Zen tradition by the 
+      Most Venerable Thich An Giao.  Hogaku-roshi was elevated to the rank of Great Master which is equivalent to Bishop. Hogaku-roshi died June 24, 2012. </p>
 
-<h1>{pageTitle}</h1>
-<h2>... and my new Astro site!</h2>
-		<h1>About</h1>
-		<p>This is a test of Zen about</p>
+      <h2>Rev. Dr. Soyu Matsuoka-roshi      </h2>
+  <p>Rev. Dr. Soyu Matsuoka-roshi (1912-1997) was a priest in a family of priests going back six centuries. 
+    He came to the United States in 1939 as an emissary of Sojiji Training Monastery first to Los Angeles, 
+    then to San Francisco. Matsuoka-roshi soon left San Francisco to go to New York where he worked with D T Suzuki at 
+    Columbia University. He then went to Chicago and established the Zen Buddhist Temple of Chicago in 1949.</p>
+<p>Matsuoka taught everywhere he could: high schools, karate dojos, living rooms. He was relentless in his effort to 
+  bring the living Dharma to the United States. He wrote letters to newspapers, was a strong supporter of non-violence and 
+  de-segregation, and wrote letters in support of Rev. Martin Luther King’s civil disobedience</p>
+  <p>He had three disciples who went on to establish their own lineages: Kongo Langois-roshi in Chicago, Il. Taiun Elliston-roshi in Atlanta, Ga. 
+    and Hogaku McGuire-roshi in Long Beach, California. Kongo-roshi is considered the first 
+    American to be ordained as a Zen priest in 1967. Sometime after Matsuoka-roshi returned to California to establish his 
+    Zen Temple in Long Beach, he broke with Sotu Shu in Japan.
+  </p>
+  <p>There are many rumors floating around the Internet and, unfortunately in print, regarding Matsuoka-roshi’s later years.
+     After reviewing extant materials and personal interviews of those who actually knew and studied with Matsuoka-roshi, 
+     I believe much of the talk surrounding this true pioneer is in an effort to diminish his mission to create a truly American form of 
+     Zen in service to supporting the institutionalized version being transmitted from Japan.
+  </p>
 
+  <p>Matsuoka-roshi taught Zazen. He taught basic forms. He chanted only the most essential sutras. He streamlined the training and 
+    progression of students so that they would have an opportunity to practice in roles and take on responsibilities 
+    they would not have been entitled to in an institutionalized context. His was a homegrown Zen, a practical Zen. He used Japanese 
+    terms sparingly and tried to make his Zen accessible to Americans.</p>
 
-        <p>Here are a few facts about me:</p>
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li>{skill}</li>)}
-</ul>
-<Footer/>
-<script>
-    import "../scripts/menu.js";
-  </script>
+    <p>Those who actually take the time to make a study of Matsuoka-roshi’s written record in two collections of his writings 
+      (“The Kyosaku” and “Moku-rai”) will soon discover the truth about this pioneer. He was a genuine Master and a fine teacher 
+      who held his students in higher esteem than they, themselves apparently did.</p>
 
-	</body>
-</html>
+</BaseLayout>
