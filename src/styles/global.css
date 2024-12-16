@@ -99,4 +99,16 @@ h2 {
       color: #fff;
     }
 
+  .block {
+  background-color: #7d7d31;
+  width: 100%;
+  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+  height: 405px;
+  background-position: center;
+  }  
+
+  .quote {
+    margin: 20px;
+  }
+
 }

@@ -2,11 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
 import { Image } from 'astro:assets';
+import  linImage  from '../assets/lineage2.png';
 import ensoImage from '../assets/enso25.png'; // Image is 1600x900
 const title = "Order of Clear Mind Zen - About";
 ---
 <BaseLayout pageTitle={title}>
-  
+  <div >
+  <Image src={linImage} alt="A description of my image." /></div>
   <p>The Order of Clear Mind Zen, established in 2005, is a Zen Buddhist organization
      of socially engaged priests and practitioners who follow the Third Pure Precept, to "bring about abundant good."  
      We are committed to Zen practice and believe a part of that practice is to support the health and well-being of all sentient beings. </p>
