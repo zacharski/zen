@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Joe''s World #1'
 pubDate: 2023-05-07
-description: 'This is the first post of my new Astro blog.'
+description: 'Joe’s World: a Detective Series, #1'
 author: 'Daiho Hilbert-Roshi'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
