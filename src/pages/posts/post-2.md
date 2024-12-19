@@ -1,12 +1,16 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
-image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+title: 'Who Owns Our Bodies?'
+author: 'Daiho Hilbert-Roshi'
+description: "Dear Readers"
+
+pubDate: 2022-06-27
+tags: ["zen"]
 ---
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+For the record, I oppose abortion as a general rule since I support life. I also support the sanctity of privacy, freedom of choice, and a society where government has no business in our bedroom. I this regard, then, I support freedom of choice when it involves itself in our lives.  We do not criminally charge those who attempt suicide, nor do we issue Social Security and Medicaid cards to those not yet born.  So, I wonder of what use is a birth certificate?  Why not issue an embryo certificate instead?
+
+
+
+Just a thought.
+
+Daiho
