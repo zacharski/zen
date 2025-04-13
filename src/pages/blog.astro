@@ -5,8 +5,8 @@ const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: 
 const pageTitle = "Organ Mountain Zen"
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h3>Roshi will blog here in the future</h3>
-  <!-- <ul>
-    {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-  </ul>-->
+  <h3>Roshi's Blog</h3>
+  <ul>
+    {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate.toString().slice(0,10)} />)}
+  </ul>
 </BaseLayout>
