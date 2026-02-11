@@ -7,7 +7,7 @@ image:
     url: "https://docs.astro.build/assets/rays.webp"
     alt: "The Astro logo on a dark background with rainbow rays."
 pubDate: 2025-04-13
-tags: ["astro", "learning in public", "setbacks", "community"]
+tags: []
 ---
 With palms together, 
 

@@ -19,4 +19,4 @@ I believe we should oppose such efforts. I believe we should make our voices now
 
 May we each find our way.
 
-Be well
+Be well.
